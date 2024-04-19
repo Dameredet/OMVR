@@ -12,10 +12,10 @@ public class MuseumVisitorDataManager : MonoBehaviour
     private IDataHandler JSONDataHandler = new JsonDataHandler();
 
     [SerializeField]
-    public PaintingCreator createPaintingManager;
+    PaintingCreator createPaintingManager;
 
     [SerializeField]
-    public DescriptionCreator createDescriptionManager;
+    DescriptionCreator createDescriptionManager;
 
     [SerializeField]
     BuildingBlocksCreator createBuildingBlockManager;

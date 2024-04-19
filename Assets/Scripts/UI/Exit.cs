@@ -8,8 +8,10 @@ public class Exit : MonoBehaviour
 
     private void Start()
     {
-        GameObject gameObject = GameObject.Find("VisitorManager"); 
-        LoadSystem = gameObject.GetComponent<MuseumLoadSystem>();
+        
+        GameObject gameObject = GameObject.Find("VisitorManager");
+        if (gameObject!= null)
+            LoadSystem = gameObject.GetComponent<MuseumLoadSystem>();
     }
 
     public void ExitMuseum()

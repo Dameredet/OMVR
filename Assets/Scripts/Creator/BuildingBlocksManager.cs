@@ -71,6 +71,7 @@ public class BuildingBlocksManager : MonoBehaviour
     public void OpenTextureSelector(string texture)
     {
         WhichTexture = texture;
+        Debug.Log(WhichTexture);
 
         PreviousPanel.SetActive(false);
         TextureSelector.SetActive(true);
@@ -122,6 +123,12 @@ public class BuildingBlocksManager : MonoBehaviour
 
     }
 
+    public void SetUp(GameObject gameObject, string Path)
+    {
+        SelectedObject = gameObject;
+        SelectedPath = Path;
+
+    }
     private void RefreshTextureFileList()
     {
         foreach (Transform child in TexturefileEntryContainer)

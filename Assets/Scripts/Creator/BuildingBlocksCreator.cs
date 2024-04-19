@@ -9,6 +9,7 @@ using UnityEngine.UIElements;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Filtering;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class BuildingBlocksCreator : MonoBehaviour
 {
@@ -102,14 +103,15 @@ private GameObject CreateObject(BuildingBlock BuildingBlock)
         string BuildingBlockPrefabName = BuildingBlock.PrefabName;
 
         ResourceFromPath resourceFromPath = new ResourceFromPath();
-
-        Texture2D albedo = new Texture2D(2048, 2048);
-        Texture2D rough = new Texture2D(2048, 2048);
-        Texture2D normal = new Texture2D(2048, 2048);
+       
+        Texture albedo = new Texture2D(2048, 2048);
+        Texture rough = new Texture2D(2048, 2048);
+        Texture normal = new Texture2D(2048, 2048);
 
         if (!string.IsNullOrEmpty(BuildingBlock.AlbedoPath))
         {
             albedo = resourceFromPath.LoadTexture(BuildingBlock.AlbedoPath);
+            Debug.Log(BuildingBlock.AlbedoPath);
         }
         if (!string.IsNullOrEmpty(BuildingBlock.RoughnessPath))
         {
@@ -124,11 +126,12 @@ private GameObject CreateObject(BuildingBlock BuildingBlock)
 
         GameObject BuildingBlockObject = Instantiate(PrefabObject, Museum);
 
-
-        Material newMaterial = new Material(Shader.Find("Standard"));
+        
+        Material newMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        newMaterial.name= BuildingBlockPrefabName;
         if (albedo != null)
         {
-            newMaterial.SetTexture("_MainTex", albedo);
+            newMaterial.mainTexture = albedo;
         }
 
         if (rough != null)
@@ -140,7 +143,7 @@ private GameObject CreateObject(BuildingBlock BuildingBlock)
         {
             newMaterial.SetTexture("_BumpMap", normal);
         }
-        Renderer renderer = BuildingBlockObject.GetComponent<Renderer>();
+        Renderer renderer = BuildingBlockObject.GetComponentInChildren<MeshRenderer>();
         if (renderer != null)
         {
             renderer.material = newMaterial;

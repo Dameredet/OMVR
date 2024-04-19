@@ -43,28 +43,27 @@ public class ResourceFromPath : MonoBehaviour
     {
         string dataPath;
         if (!string.IsNullOrEmpty(Path)) { 
-        if (!Path.Contains(Application.persistentDataPath))
-        {
-            dataPath = Application.persistentDataPath + Path;
-        }
-        else
-        {
+            if (!Path.Contains(Application.persistentDataPath))
+            {
+                dataPath = Application.persistentDataPath + Path;
+            }
+            else
+            { 
             dataPath= Path;
-        }
+            }
 
         Texture2D texture = LoadTexture(dataPath);
 
-        if (texture != null)
-        {
-            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
-            return sprite;
-        }
-        else
-        {
-            // Handle the case where texture is null (e.g., log an error)
-            Debug.LogError("Failed to load texture from path: " + dataPath);
-            return null;
-        }
+            if (texture != null)
+            {
+                Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
+                return sprite;
+            }
+            else
+            {
+                Debug.LogError("Failed to load texture from path: " + dataPath);
+                return null;
+            }
         }
         return null;
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MuseumSaveSystem : MonoBehaviour
 {
-    public IDataHandler JSONDataHandler = new JsonDataHandler();
+    private IDataHandler JSONDataHandler = new JsonDataHandler();
     private string MuseumHeadlinesPath = "/Headlines";
 
     public void SaveBothFiles(MuseumHeadline museumHeadline, MuseumContents museumContents)

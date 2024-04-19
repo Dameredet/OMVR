@@ -11,7 +11,7 @@ public class RecenterManager : MonoBehaviour
     public Transform target;
 
     public InputActionProperty recenterButton;
-    public void Recenter()
+    private void Recenter()
     {
         
         Vector3 offset = head.position- origin.position;
@@ -24,10 +24,7 @@ public class RecenterManager : MonoBehaviour
         cameraForward.y = 0f;
         float angle = Vector3.SignedAngle(cameraForward, targetForward, Vector3.up);
         origin.RotateAround(head.position, Vector3.up, angle);
-/*
-        XROrigin origin = GetComponent<XROrigin>();
-        origin.MoveCameraToWorldLocation(target.position);
-        origin.MatchOriginUpCameraForward(target.up, target.forward);*/
+
     }
     void Update()
     {

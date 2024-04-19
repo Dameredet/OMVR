@@ -51,6 +51,9 @@ public class MainMenuUIManager : MonoBehaviour
         PlayerPrefs.SetString("FileToLoad", "");
         PlayerPrefs.Save();
 
+
+        JSONDataHandler.CreateDirectory("/Headlines");
+
         HidePanel();
         CreatePosters();
 

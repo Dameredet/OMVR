@@ -9,9 +9,9 @@ public class MuseumEntrance : MonoBehaviour
     public MuseumCreationDataManager museumDataManager;
     public Collider museumAreaCollider;
     [SerializeField]
-    public GameObject gameObject;
+    private GameObject gameObject;
     [SerializeField]
-    public GameObject ExitCanvas;
+    private GameObject ExitCanvas;
     [SerializeField]
     public GameObject StartingPosition;
 

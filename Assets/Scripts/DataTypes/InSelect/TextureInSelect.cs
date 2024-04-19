@@ -32,11 +32,11 @@ public class TextureInSelect : MonoBehaviour, IPointerClickHandler
         if (CreatorManager != null)
         {
 
-            if (CreatorManager.GetComponent<SculptureManager>() != null)
+            if (CreatorManager.GetComponent<BuildingBlocksManager>() != null)
             {
                 Debug.Log("Found it. Sending path");
                 Debug.Log(FilePath);
-                CreatorManager.GetComponent<SculptureManager>().SetUp(TextureInSelectObject, FilePath);
+                CreatorManager.GetComponent<BuildingBlocksManager>().SetUp(TextureInSelectObject, FilePath);
             }
 
         }

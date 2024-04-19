@@ -28,7 +28,7 @@ public class CreatorCreationSystem : MonoBehaviour
     private string sculpturepathtext = "Path to sculpture file";
     [SerializeField]
     private TextMeshProUGUI DescriptionPathText;
-    private string descriptionpathtext = "Path to sculpture file";
+    private string descriptionpathtext = "Path to description file";
     [SerializeField]
     private Image AlbedoImage;
     [SerializeField]

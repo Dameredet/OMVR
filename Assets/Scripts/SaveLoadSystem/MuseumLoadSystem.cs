@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MuseumLoadSystem : MonoBehaviour
 {
 
-    public IDataHandler JSONDataHandler = new JsonDataHandler();
+    //public IDataHandler JSONDataHandler = new JsonDataHandler();
 
     public void LoadScene(string sceneName, string currentSceneName, string FileToLoadPath = null)
     {

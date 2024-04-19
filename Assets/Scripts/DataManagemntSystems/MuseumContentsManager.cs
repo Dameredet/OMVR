@@ -9,10 +9,10 @@ public class MuseumContentsManager : MonoBehaviour
 {
 
     [SerializeField]
-    public PaintingCreator createPaintingManager;
+    PaintingCreator createPaintingManager;
 
     [SerializeField]
-    public DescriptionCreator createDescriptionManager;
+    DescriptionCreator createDescriptionManager;
 
     [SerializeField]
     BuildingBlocksCreator createBuildingBlockManager;

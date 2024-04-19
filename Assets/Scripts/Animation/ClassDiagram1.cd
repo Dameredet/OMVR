@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HandAnimationScript">
+    <Position X="36" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Animation\HandAnimationScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildingBlocksCreator">
+    <Position X="57.75" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAEAAAAAABAAgAABgAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\Creator\BuildingBlocksCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildingBlocksManager">
+    <Position X="74.25" Y="9" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QgIAIAAAACAgGCRAADQgAAAAEAEEBUAAINECAAACAgA=</HashCode>
+      <FileName>Assets\Scripts\Creator\BuildingBlocksManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildingBlocksSetUpController">
+    <Position X="80" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAEAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creator\BuildingBlocksSetUpController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreatorCreationSystem">
+    <Position X="125.5" Y="9.5" Width="2.25" />
+    <NestedTypes>
+      <Interface Name="CreatorCreationSystem.ICreationStrategy">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Creator\CreatorCreationSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="CreatorCreationSystem.PaintingStrategy">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Creator\CreatorCreationSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="CreatorCreationSystem.DescriptionStrategy">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Creator\CreatorCreationSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAIBAIAAgEABAAAABAQEACAFAAUgAAAEEAgACACA=</HashCode>
+      <FileName>Assets\Scripts\Creator\CreatorCreationSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreatorUILogic">
+    <Position X="33" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>MKAAAABACACAAEGCAAAAgAIIAAQAQAAQgDAGoRAQBBA=</HashCode>
+      <FileName>Assets\Scripts\Creator\CreatorUILogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DescriptionCreator">
+    <Position X="63" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAACAAAEAAAAAABIAAAABgAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\Creator\DescriptionCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DescriptionManager">
+    <Position X="77.25" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BIAAIQIAACAQIAgAAAQAAAAAGAEABCAAIAEACACAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creator\DescriptionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FrameSelector">
+    <Position X="28" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAQAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creator\FrameSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InfoTabSelector">
+    <Position X="55.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAIAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creator\InfoTabSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaintingCreator">
+    <Position X="112.25" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAEAAAACAAAEAAAAAABAAgAABgAAAgAAAgA=</HashCode>
+      <FileName>Assets\Scripts\Creator\PaintingCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaintingManager">
+    <Position X="88.75" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BIAAIQAAICAQIAAAAAQBAAIAEAEARAAAIAEACACAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creator\PaintingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adjustment">
+    <Position X="30" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAQAAAAAAAAAAAAACAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creator\Positioning\Adjustment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdjustmentUI">
+    <Position X="46.5" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>cCIAAABwBCAAIIgABKIAFgCAQggAAAAAAAAgIAIgAgA=</HashCode>
+      <FileName>Assets\Scripts\Creator\Positioning\AdjustmentUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseumEntrance">
+    <Position X="68.5" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAQCAAAAAAAAAIAAYgAAAAAAgEA=</HashCode>
+      <FileName>Assets\Scripts\Creator\Positioning\MuseumEntrance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnMuseumAreaEnter">
+    <Position X="60.5" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAAAAAAAAQAAAAAAAAAAIAARAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creator\Positioning\OnMuseumAreaEnter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SculptureCreator">
+    <Position X="96" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACEAAAAgAAAEAgAAAAAAAgAABAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\Creator\SculptureCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SculptureManager">
+    <Position X="85.75" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAIAIACAACAgJChCABQAAAAAVAEABQAAYJECIACCAAI=</HashCode>
+      <FileName>Assets\Scripts\Creator\SculptureManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataImporter">
+    <Position X="50" Y="9.75" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Interface Name="DataImporter.IFileListingStrategy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\DataManagemntSystems\DataImporter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="DataImporter.PaintingStrategy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\DataManagemntSystems\DataImporter.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="DataImporter.PosterStrategy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\DataManagemntSystems\DataImporter.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="DataImporter.DescriptionStrategy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\DataManagemntSystems\DataImporter.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="DataImporter.SculptureStrategy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\DataManagemntSystems\DataImporter.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="DataImporter.MusicStrategy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\DataManagemntSystems\DataImporter.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" ManuallyRouted="true">
+      <Path>
+        <Point X="69.5" Y="1.691" />
+        <Point X="69.5" Y="2.056" />
+        <Point X="51.25" Y="2.056" />
+        <Point X="51.25" Y="9.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAAQAEEAICJAoAMEAAWBAEAMIAAAAALAAAAACICQAAA=</HashCode>
+      <FileName>Assets\Scripts\DataManagemntSystems\DataImporter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseumContentsManager">
+    <Position X="43.75" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAgAAAAAAAAAAAAAQAAAAAAAAAQAgAAAoEAQAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataManagemntSystems\MuseumContentsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseumCreationDataManager">
+    <Position X="8.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAEAAJAABAAAAACAAABZRAICGAAAQAAAEQAAAUAAAEA=</HashCode>
+      <FileName>Assets\Scripts\DataManagemntSystems\MuseumCreationDataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseumHeadlineManager">
+    <Position X="119.5" Y="9.75" Width="2" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" FixedToPoint="true">
+      <Path>
+        <Point X="69.5" Y="1.691" />
+        <Point X="69.5" Y="2.066" />
+        <Point X="120.562" Y="2.066" />
+        <Point X="120.562" Y="9.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAQoAgAACQQCEAAAAAAAAgACCEAQACAIAECCQCAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataManagemntSystems\MuseumHeadlineManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseumVisitorDataManager">
+    <Position X="122.5" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAABCAAAADAAAABAAIBAAAAAAgAEAAEAEAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataManagemntSystems\MuseumVisitorDataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PosterManager">
+    <Position X="66" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BFAQJAEAACAQAABAQAAAAAgAgAEAQABAIAEACQCAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataManagemntSystems\PosterManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ResourceFromPath">
+    <Position X="104.25" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAACAAAAAAABAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\DataManagemntSystems\ResourceFromPath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildingBlock">
+    <Position X="2.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAIAAAAAAABAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\BuildingBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildingBlockObject">
+    <Position X="13.5" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\BuildingBlockObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content">
+    <Position X="5.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAIAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\Content.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContentObject">
+    <Position X="13.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACCAAAAAAAAAAAAAAAAAAAAAIAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\ContentObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Description">
+    <Position X="7" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\Description.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DescriptionObject">
+    <Position X="16" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\DescriptionObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Painting">
+    <Position X="9.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\Painting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaintingObject">
+    <Position X="11.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\PaintingObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sculpture">
+    <Position X="4.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgEAAAAIAAAAAAABAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\CreatorDataTypes\Sculpture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreatorDescriptionInSelect" BaseTypeListCollapsed="true">
+    <Position X="101.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAgAAAAAAAAAAAAAAAAAAgJEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\InSelect\CreatorDescriptionInSelect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DescriptionInSelect" BaseTypeListCollapsed="true">
+    <Position X="71.5" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgCAAAgAAAAAAAAAAAAAAAAAAAJEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\InSelect\DescriptionInSelect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FileInImporter" BaseTypeListCollapsed="true">
+    <Position X="110" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAgAgAAAAAAAAAAAAAAAAAJAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\InSelect\FileInImporter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ModelInSelect" BaseTypeListCollapsed="true">
+    <Position X="93.75" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAgAAAAAAAAAAAAAAAAAAgJEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\InSelect\ModelInSelect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PaintingInSelect" BaseTypeListCollapsed="true">
+    <Position X="98.75" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAgAgBAAAAAAAAAAAAAAAABEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\InSelect\PaintingInSelect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PosterInSelect" BaseTypeListCollapsed="true">
+    <Position X="114.75" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAgAgAAAAAAABAAAAAAAAABEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\InSelect\PosterInSelect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TextureInSelect" BaseTypeListCollapsed="true">
+    <Position X="41" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAgAgAAAAAAAAAAAAAAgAABEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\InSelect\TextureInSelect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MuseumContents">
+    <Position X="138.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAEAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\Museum\MuseumContents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseumHeadline">
+    <Position X="136.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAgAAAAAAKAAAQAAAAAAEAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\Museum\MuseumHeadline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PosterPrefabScript" BaseTypeListCollapsed="true">
+    <Position X="38.75" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAgAAAAAAAAAAAAAAEAAAEAAAQAAEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTypes\PosterPrefabScript.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="JsonDataHandler" BaseTypeListCollapsed="true">
+    <Position X="134.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAQCAgAAAAAAAAAAAAAIQA=</HashCode>
+      <FileName>Assets\Scripts\JSON\JsonDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MuseumLoadSystem">
+    <Position X="117.25" Y="11.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SaveLoadSystem\MuseumLoadSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseumSaveSystem">
+    <Position X="20.5" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIACAAACBAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SaveLoadSystem\MuseumSaveSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InteractorsManagement">
+    <Position X="25.5" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACRAAAAAEIAAAAAAAAQACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Teleportation\InteractorsManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecenterManager">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAgAAAAAAAIAAAAAAAAAAIAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\Teleportation\RecenterManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportationManager">
+    <Position X="83" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AhQBgAQAEGIAAAAAAAAAABAAAAABgAAAQAAAAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Teleportation\TeleportationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitorSpawn">
+    <Position X="53.25" Y="9.75" Width="1.75" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" FixedToPoint="true">
+      <Path>
+        <Point X="69.5" Y="1.691" />
+        <Point X="69.5" Y="2.066" />
+        <Point X="54.125" Y="2.066" />
+        <Point X="54.125" Y="9.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>GAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Teleportation\VisitorSpawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exit">
+    <Position X="91.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAIAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\Exit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenuUIManager">
+    <Position X="107" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQARCAhAAjAEACBAAQBARAAAAAgiQAAAiwAkIA=</HashCode>
+      <FileName>Assets\Scripts\UI\MainMenuUIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShowKeyboard">
+    <Position X="23.25" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAiAAAABAAAAAAAABAAAFAABAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\ShowKeyboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorkshopUIManager">
+    <Position X="128.75" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEIgAACAAQARAAAAEMEAAACAAAAEYAAAIEAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\WorkshopUIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="68.75" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="IDataHandler">
+    <Position X="132.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAQCAgAAAAAAAAAAAAAIQA=</HashCode>
+      <FileName>Assets\Scripts\JSON\IDataHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

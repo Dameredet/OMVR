@@ -67,10 +67,8 @@ public class ShowKeyboard : MonoBehaviour
     {
         if (keyboardOpen)
         {
-            // Check if the clicked object is not part of the keyboard
             if (eventData.pointerCurrentRaycast.gameObject != NonNativeKeyboard.Instance.gameObject)
             {
-                // Clicked outside of the keyboard, close it
                 NonNativeKeyboard.Instance.Close();
             }
         }
