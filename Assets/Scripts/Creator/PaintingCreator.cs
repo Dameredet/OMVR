@@ -129,7 +129,7 @@ public class PaintingCreator : MonoBehaviour
 
                     float aspectRatio = (float)pictureWidth / (float)pictureHeight;
 
-                    Vector3 canvasScale = new Vector3(aspectRatio*20f, 20f, 20f);
+                    Vector3 canvasScale = new Vector3(20f, aspectRatio*20f, 20f);
                     canvasObject.transform.localScale = canvasScale;
 
                    // canvasObject.transform.Rotate(Vector3.up, 180f);

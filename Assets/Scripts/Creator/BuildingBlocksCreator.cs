@@ -58,7 +58,7 @@ public class BuildingBlocksCreator : MonoBehaviour
 
 
         BuildingBlockObject buildingBlock = gameObject.GetComponent<BuildingBlockObject>();
-        buildingBlock.SetUp(BuildingBlock.PrefabName);
+        buildingBlock.SetUp(BuildingBlock.PrefabName, BuildingBlock.AlbedoPath, BuildingBlock.RoughnessPath, BuildingBlock.NormalMapPath);
 
         gameObject.AddComponent<OnMuseumAreaEnter>();
         OnMuseumAreaEnter onMuseumAreaEnter = gameObject.GetComponent<OnMuseumAreaEnter>();

@@ -26,6 +26,7 @@ public class MuseumContentsManager : MonoBehaviour
         museumContents.paintings.Clear();
         museumContents.descriptions.Clear();
         museumContents.buildingblocks.Clear();
+
         foreach (PaintingObject painting in paintingObjects)
         {
             painting.SetTransform(painting.painting, 
@@ -50,52 +51,58 @@ public class MuseumContentsManager : MonoBehaviour
 
     public void DataToUI(MuseumContents museumContents)
     {
-        DestroyObjects();
-
+       // DestroyObjects();
+       
         foreach (Painting painting in museumContents.paintings) 
         {
             PaintingObject paintingObject = new PaintingObject();
             paintingObject.painting = painting;
             createPaintingManager.CreateForWorkshop(painting, paintingObject.GetPosition(painting), paintingObject.GetRotation(painting),paintingObject.GetScale(painting));
-            paintingObjects.Add(paintingObject);
+            //paintingObjects.Add(paintingObject);
         }
         foreach (Description description in museumContents.descriptions)
         {
             DescriptionObject descriptionObject = new DescriptionObject();
             descriptionObject.description = description;
             createDescriptionManager.CreateForWorkshop(description, descriptionObject.GetPosition(description), descriptionObject.GetRotation(description), descriptionObject.GetScale(description));
-            descriptionObjects.Add(descriptionObject);
+            //descriptionObjects.Add(descriptionObject);
         }
+        int i = 0;
         foreach (BuildingBlock buildingBlock in museumContents.buildingblocks)
         {
+            Debug.Log("This is a building block nr: " + i + " " + buildingBlock.PrefabName);
+            i++;
             BuildingBlockObject buildingBlockObject = new BuildingBlockObject();
             buildingBlockObject.buildingBlock = buildingBlock;
             createBuildingBlockManager.CreateForWorkshop(buildingBlock, buildingBlockObject.GetPosition(buildingBlock), buildingBlockObject.GetRotation(buildingBlock), buildingBlockObject.GetScale(buildingBlock));
-            buildingBlockObjects.Add(buildingBlockObject);
+            //buildingBlockObjects.Add(buildingBlockObject);
         }
-        museumContents = new MuseumContents();
+       
+
     }
 
-   private void DestroyObjects()
+   private void ClearObjects()
     {
         foreach (PaintingObject painting in paintingObjects)
         {
-            
-            Destroy(painting.gameObject);
+            if(painting == null)
             paintingObjects.Remove(painting);
+            Destroy(painting.gameObject);
+            
         }
         foreach (DescriptionObject description in descriptionObjects)
         {
-            
-            Destroy(description.gameObject);
             descriptionObjects.Remove(description);
+            Destroy(description.gameObject);
+            
 
         }
         foreach (BuildingBlockObject buildingBlock in buildingBlockObjects)
         {
-            
-            Destroy(buildingBlock.gameObject);
             buildingBlockObjects.Remove(buildingBlock);
+            Destroy(buildingBlock.gameObject);
+            Debug.Log("I have destroyed an object");
+            
         }
     }
 }

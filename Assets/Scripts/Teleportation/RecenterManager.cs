@@ -11,6 +11,11 @@ public class RecenterManager : MonoBehaviour
     public Transform target;
 
     public InputActionProperty recenterButton;
+
+    private void Start()
+    {
+        Recenter();
+    }
     private void Recenter()
     {
         

@@ -68,6 +68,24 @@ public class BuildingBlocksManager : MonoBehaviour
 
     }
 
+    public void SelectPilar()
+    {
+        BuildingBlock.buildingBlock.PrefabName = "PilarPrefab";
+
+
+    }
+    public void SelectPassage()
+    {
+        BuildingBlock.buildingBlock.PrefabName = "PassagePrefab";
+
+
+    }
+    public void SelectGrate()
+    {
+        BuildingBlock.buildingBlock.PrefabName = "GratePrefab";
+
+
+    }
     public void OpenTextureSelector(string texture)
     {
         WhichTexture = texture;

@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class AdjustmentUI : MonoBehaviour
 {
-    public float ButtonAdjustmentUnit = 1.0f;
+    public float ButtonAdjustmentUnit = 0.01f;
 
     [SerializeField]
     Slider SliderX;
@@ -28,8 +28,8 @@ public class AdjustmentUI : MonoBehaviour
     Slider RotationY;
     [SerializeField]
     Slider RotationZ;
-    public float MinRotation = 0;
-    public float MaxRotation = 360;
+    public float MinRotation = 0f;
+    public float MaxRotation = 360f;
 
     [SerializeField]
     TMP_InputField ScaleX;
@@ -54,6 +54,15 @@ public class AdjustmentUI : MonoBehaviour
         SliderX.onValueChanged.AddListener(SliderXOnValueChanged);
         SliderY.onValueChanged.AddListener(SliderYOnValueChanged);
         SliderZ.onValueChanged.AddListener(SliderZOnValueChanged);
+
+        RotationX.minValue = MinRotation;
+        RotationX.maxValue = MaxRotation;
+
+        RotationY.minValue = MinRotation;
+        RotationY.maxValue = MaxRotation;
+
+        RotationZ.minValue = MinRotation;
+        RotationZ.maxValue = MaxRotation;
 
         RotationX.onValueChanged.AddListener(RotationXOnInputValueChanged);
         RotationY.onValueChanged.AddListener(RotationYOnInputValueChanged);
@@ -97,14 +106,14 @@ public class AdjustmentUI : MonoBehaviour
     public void ButtonRight()
     {
         Vector3 newPositionVector = museumObject.transform.position;
-        newPositionVector.x = newPositionVector.x - ButtonAdjustmentUnit;
+        newPositionVector.x = newPositionVector.x + ButtonAdjustmentUnit;
         museumObject.transform.position = newPositionVector;
     }
 
     public void ButtonLeft()
     {
         Vector3 newPositionVector = museumObject.transform.position;
-        newPositionVector.x = newPositionVector.x + ButtonAdjustmentUnit;
+        newPositionVector.x = newPositionVector.x - ButtonAdjustmentUnit;
         museumObject.transform.position = newPositionVector;
     }
 
@@ -173,20 +182,25 @@ public class AdjustmentUI : MonoBehaviour
 
     void RotationXOnInputValueChanged(float newValue)
     {
-            museumObject.transform.rotation = Quaternion.Euler(newValue, 0f, 0f);
+        Quaternion currentRotation = museumObject.transform.rotation;
+        float currentY = currentRotation.eulerAngles.y;
+        float currentZ = currentRotation.eulerAngles.z;
+        museumObject.transform.rotation = Quaternion.Euler(newValue, currentY, currentZ);
 
     }
     void RotationYOnInputValueChanged(float newValue)
     {
-
-            museumObject.transform.rotation = Quaternion.Euler(0f, newValue,  0f);
-
+        Quaternion currentRotation = museumObject.transform.rotation;
+        float currentX = currentRotation.eulerAngles.x;
+        float currentZ = currentRotation.eulerAngles.z;
+        museumObject.transform.rotation = Quaternion.Euler(currentX, newValue, currentZ);
     }
     void RotationZOnInputValueChanged(float newValue)
     {
-
-            museumObject.transform.rotation = Quaternion.Euler(0f,  0f, newValue);
-
+        Quaternion currentRotation = museumObject.transform.rotation;
+        float currentX = currentRotation.eulerAngles.x;
+        float currentY = currentRotation.eulerAngles.y;
+        museumObject.transform.rotation = Quaternion.Euler(currentX, currentY, newValue);
     }
     void ScaleXOnInputValueChanged(string newValue)
     {

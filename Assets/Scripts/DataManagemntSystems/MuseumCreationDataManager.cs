@@ -65,6 +65,7 @@ public class MuseumCreationDataManager : MonoBehaviour
     {
         museumHeadline = JSONDataHandler.LoadData<MuseumHeadline>(MuseumHeadlinesPath + FileToLoad);
         museumContents = JSONDataHandler.LoadData<MuseumContents>(museumHeadline.MuseumContentsPath);
+
     }
 
     public void Save()

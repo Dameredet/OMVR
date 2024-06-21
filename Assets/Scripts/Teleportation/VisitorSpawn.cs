@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class VisitorSpawn : MonoBehaviour
 {
+    public float scaleMultiplier = 25f;
+    public string objectName = "Museum";
+
     [SerializeField]
     Transform origin;
 
@@ -12,6 +15,16 @@ public class VisitorSpawn : MonoBehaviour
     RecenterManager RecenterManager;
 
     public Transform startingpoint;
+
+    private void Start()
+    {
+        GameObject museumObject = GameObject.Find(objectName);
+
+        Transform museumTransform = museumObject.transform;
+
+        museumTransform.localScale *= scaleMultiplier;
+
+    }
     public void SetSpawner()
     {
         GetStartingPoint();
